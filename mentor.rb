@@ -6,8 +6,8 @@ class Mentor
     self.name = name
   end
   
-  def job(mentor_job)
-    puts "#{self.name}です。私は#{mentor_job}"
+  def job
+    puts "#{self.name}です。私は現役のITプロフェッショナルです。"
   end
 end  
 
@@ -19,8 +19,8 @@ class RailsMentor < Mentor
   end
   
     
-  def job(mentor_job)
-  super
+  def job
+  puts "#{self.name}です。RubyとRailsでWebアプリケーションを作ります。"
   end  
   
 end    
@@ -29,5 +29,5 @@ end
 kirameki = Mentor.new('煌木',)  
 akaide = RailsMentor.new('赤出')  
 
-kirameki.job('現役のITプロフェッショナルです。')
-akaide.job('RubyとRailsでWebアプリケーションを作ります。')
+kirameki.job
+akaide.job
